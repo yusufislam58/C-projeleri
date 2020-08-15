@@ -1,0 +1,44 @@
+#include <stdio.h>
+#include <stdlib.h>
+#include <locale.h>
+
+
+int main() {
+	setlocale(LC_ALL,"Turkish");
+	
+	int el,bagaj,fark1,fark2;
+	printf("****Ücret Tarifesi*****\n\n");
+	printf("Bagaj 23 kg sonrası kilogram başı  8 tl\n");
+	printf("el bagajı 8 kg sonrası 5 tl \n\n\n\n");
+	
+	
+	printf("Bagaj kilonuzu giriniz: ");
+	scanf("%d",&bagaj);
+	
+	printf("El bagajı Kilosunu Giriniz: ");
+	scanf("%d",&el);
+	
+	
+	
+	if(bagaj<23)
+	{
+		fark1=0;
+	}
+	else
+	{
+		fark1=(bagaj-23)*8;
+	}
+	if(el<8)
+	{
+		fark2=0;
+	}
+	else
+	{
+		fark2=(el-8)*5;
+	}
+	printf("Ödemeniz Gereken Tutar %d TL",fark1+fark2);
+	
+	
+
+	return 0;
+}
