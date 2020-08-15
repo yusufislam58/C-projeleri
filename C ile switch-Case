@@ -1,0 +1,45 @@
+#include <stdio.h>
+#include <stdlib.h>
+#include <locale.h>
+
+
+int main() {
+	setlocale(LC_ALL, "Turkish");
+	
+	printf("******Gün Kodları******\n\n");
+	printf("1-->'Pazartesi'\n");
+	printf("2-->'Salı'\n");
+	printf("3-->'Çarşamba'\n");
+	printf("4-->'Perşembe'\n");
+	printf("5-->'Cuma'\n");
+	printf("6-->'Cumartesi'\n");
+	printf("7-->'Pazar'");
+	printf("***************************\n\n\n");
+
+	
+	
+	int sayi;
+	printf("Ders Kodunu Giriniz: ");
+	scanf("%d",&sayi);
+	
+	switch(sayi)
+	{
+		case 1: printf("Pazartesi");
+		break;
+		case 2: printf("Salı");
+		break;
+		case 3: printf("Çarşamba");
+		break;
+		case 4: printf("Perşembe");
+		break;
+		case 5: printf("Cuma");
+		break;
+		case 6: printf("Cumartesi");
+		break;
+		case 7: printf("Pazar");
+		break;
+		default: printf("Hatalı kodlama yaptınız..!!");
+	}
+
+	return 0;
+}
